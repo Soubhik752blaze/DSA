@@ -2,7 +2,7 @@
 using namespace std;
 
 
-bool checkforcycle(int node, int parent, vector<int> &vis,vector<int> adj[])
+bool checkforcycleDFS(int node, int parent, vector<int> &vis,vector<int> adj[])
 {
     
     vis[node]=1;
@@ -10,7 +10,7 @@ bool checkforcycle(int node, int parent, vector<int> &vis,vector<int> adj[])
     {
         if(!vis[it])
         {
-            if(checkforcycle(it,node,vis,adj))
+            if(checkforcycleDFS(it,node,vis,adj))
                 return true;
         } 
         else if(it!=parent)
@@ -29,7 +29,7 @@ bool cycledetection(int n,vector<int> adj[])
       for(int i = 1;i<n;i++) 
       {
         if(!vis[i]) 
-            if(checkforcycle(i, -1,vis, adj))
+            if(checkforcycleDFS(i, -1,vis, adj))
                 return true ;
       }
 	    return false; 
