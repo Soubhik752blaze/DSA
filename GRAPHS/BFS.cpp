@@ -6,7 +6,7 @@ vector<int> BFSofgraph(int n,vector<int> adj[])
     
     vector<int> bfs; 
     vector<int> vis(n, 0); 
-    for(int i = 1;i<n;i++) 
+    for(int i = 0;i<n;i++) 
     {
         if(!vis[i]) 
         {
