@@ -35,3 +35,5 @@ int main()
 }
 
 //@Soubhik_Ghosh
+//TC -> O(N)
+//SC -> O(N)
