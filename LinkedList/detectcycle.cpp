@@ -1,4 +1,4 @@
-//Quesion:- Write an C++ program to find the middle of a linked list.
+//Quesion:- Write an C++ program to detect a cycle of a linked list.
 #include <iostream>
 using namespace std;
 
